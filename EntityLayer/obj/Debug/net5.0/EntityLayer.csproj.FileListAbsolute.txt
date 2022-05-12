@@ -1,4 +1,6 @@
 C:\Users\Lenovo\Desktop\Kamp\EntityLayer\bin\Debug\net5.0\EntityLayer.deps.json
+C:\Users\Lenovo\Desktop\Kamp\EntityLayer\bin\Debug\net5.0\EntityLayer.runtimeconfig.json
+C:\Users\Lenovo\Desktop\Kamp\EntityLayer\bin\Debug\net5.0\EntityLayer.runtimeconfig.dev.json
 C:\Users\Lenovo\Desktop\Kamp\EntityLayer\bin\Debug\net5.0\EntityLayer.dll
 C:\Users\Lenovo\Desktop\Kamp\EntityLayer\bin\Debug\net5.0\ref\EntityLayer.dll
 C:\Users\Lenovo\Desktop\Kamp\EntityLayer\bin\Debug\net5.0\EntityLayer.pdb
@@ -10,6 +12,4 @@ C:\Users\Lenovo\Desktop\Kamp\EntityLayer\obj\Debug\net5.0\EntityLayer.csproj.Cor
 C:\Users\Lenovo\Desktop\Kamp\EntityLayer\obj\Debug\net5.0\EntityLayer.dll
 C:\Users\Lenovo\Desktop\Kamp\EntityLayer\obj\Debug\net5.0\ref\EntityLayer.dll
 C:\Users\Lenovo\Desktop\Kamp\EntityLayer\obj\Debug\net5.0\EntityLayer.pdb
-C:\Users\Lenovo\Desktop\Kamp\EntityLayer\bin\Debug\net5.0\EntityLayer.runtimeconfig.json
-C:\Users\Lenovo\Desktop\Kamp\EntityLayer\bin\Debug\net5.0\EntityLayer.runtimeconfig.dev.json
 C:\Users\Lenovo\Desktop\Kamp\EntityLayer\obj\Debug\net5.0\EntityLayer.genruntimeconfig.cache

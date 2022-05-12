@@ -8,8 +8,8 @@ namespace UI.ViewComponents.Category
     {
         BlogManager blogManager = new BlogManager(new EfBlogRepository());
         public IViewComponentResult Invoke()
-        {
-            var values = blogManager.GetBlogListByAuthor(1);
+        {            
+            var values = blogManager.GetBlogListByAuthor(ViewBag.AuthorId);
             return View(values);
         }
     }

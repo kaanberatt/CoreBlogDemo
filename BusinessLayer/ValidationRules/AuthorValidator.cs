@@ -16,7 +16,7 @@ namespace BusinessLayer.ValidationRules
             RuleFor(x => x.AuthorPassword).Matches(@"[A-Z]+").WithMessage("Şifre en az 1 tane büyük harf içermelidir.");
             RuleFor(x => x.AuthorPassword).Matches(@"[a-z]+").WithMessage("Şifre en az 1 tane küçük harf içermelidir.");
             RuleFor(x => x.AuthorPassword).Matches(@"[0-9]+").WithMessage("Şifre en az 1 tane numara içermelidir.(0-9)");
-            RuleFor(x => x.AuthorPassword).Matches(@"[\!\?\*\.]*$").WithMessage("Şifre en az 1 tane özel karakter içermelidir (!,?, *.).");
+            RuleFor(x => x.AuthorPassword).Matches(@"[\!\?\*\.]+").WithMessage("Şifre en az 1 tane özel karakter içermelidir (!,?, *.).");
         }
     }
 }

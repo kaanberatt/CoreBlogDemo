@@ -14,7 +14,7 @@ namespace BusinessLayer.Concrete
         }
         public void CommentAdd(Comment comment)
         {
-            
+            commentDAL.Insert(comment);
         }
 
         public List<Comment> GetList(int id)

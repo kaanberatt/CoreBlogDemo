@@ -45,6 +45,7 @@ namespace BusinessLayer.Concrete
         {
             return blogDAL.GetListAll();
         }
+        
 
         public List<Blog> GetBlogListByAuthor(int id)
         {
