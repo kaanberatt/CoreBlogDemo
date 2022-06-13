@@ -3,7 +3,7 @@
 
 <div class="tech-btm">
     <h4>Yazarın Son Postları</h4>
-@foreach (var item in Model.Take(3))
+@foreach (var item in Model.TakeLast(3))
 {  
     <div class="blog-grids row mb-3">
         <div class="col-md-5 blog-grid-left">

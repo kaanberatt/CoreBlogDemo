@@ -1,9 +1,10 @@
+using System.Collections.Generic;
 using EntityLayer.Concrete;
 
 namespace BusinessLayer.Abstract
 {
-    public interface IAuthorService
+    public interface IAuthorService : IGenericService<Author>
     {
-        void AuthorAdd(Author author);
+        public List<Author> GetAuthorById(int id);
     }
 }

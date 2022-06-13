@@ -16,7 +16,7 @@ namespace UI.Controllers
         public PartialViewResult SubscribeMail(NewsLetter newsLetter)
         {
             newsLetter.MailStatus=true;
-            newsLetterManager.AddNewsLetter(newsLetter);
+            newsLetterManager.TAdd(newsLetter);
             return PartialView();
         }
     }

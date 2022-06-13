@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace DataAccessLayer.Abstract
 {
@@ -11,9 +13,10 @@ namespace DataAccessLayer.Abstract
         void Insert(T t);        
         void Delete(T t);        
         void Update(T t);        
-        List<T> GetListAll();
         T GetById(int id);
+        List<T> GetListAll();
         
+        List<T> GetListAll(Expression<Func<T, bool>> filter = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, params Expression<Func<T, object>>[] includes);
         List<T> GetListAll(Expression<Func<T,bool>> filter);
         
     }

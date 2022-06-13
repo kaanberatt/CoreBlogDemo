@@ -5840,11 +5840,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\Kamp\\BusinessLayer\\BusinessLayer.csproj",
+      "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\GitHub\\Kamp\\BusinessLayer\\BusinessLayer.csproj",
       "projectName": "BusinessLayer",
-      "projectPath": "C:\\Users\\Lenovo\\Desktop\\Kamp\\BusinessLayer\\BusinessLayer.csproj",
+      "projectPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\Kamp\\BusinessLayer\\BusinessLayer.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lenovo\\Desktop\\Kamp\\BusinessLayer\\obj\\",
+      "outputPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\Kamp\\BusinessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -5867,11 +5867,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Lenovo\\Desktop\\Kamp\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "C:\\Users\\Lenovo\\Desktop\\Kamp\\DataAccessLayer\\DataAccessLayer.csproj"
+            "C:\\Users\\Lenovo\\Documents\\GitHub\\Kamp\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\Kamp\\DataAccessLayer\\DataAccessLayer.csproj"
             },
-            "C:\\Users\\Lenovo\\Desktop\\Kamp\\EntityLayer\\EntityLayer.csproj": {
-              "projectPath": "C:\\Users\\Lenovo\\Desktop\\Kamp\\EntityLayer\\EntityLayer.csproj"
+            "C:\\Users\\Lenovo\\Documents\\GitHub\\Kamp\\EntityLayer\\EntityLayer.csproj": {
+              "projectPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\Kamp\\EntityLayer\\EntityLayer.csproj"
             }
           }
         }

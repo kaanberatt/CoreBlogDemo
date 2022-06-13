@@ -24,7 +24,7 @@ namespace UI.Controllers
             comment.CommentDate=DateTime.Parse(DateTime.Now.ToShortDateString());
             comment.CommentStatus=true;
             comment.BlogId=11;
-            commentManager.CommentAdd(comment);
+            commentManager.TAdd(comment);
             return PartialView();
         }
         public PartialViewResult CommentListByBlog(int id)

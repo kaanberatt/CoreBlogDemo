@@ -1,0 +1,56 @@
+﻿@model BlogVm
+@{
+    ViewData["Title"] = "BlogEdit";
+    Layout = "~/Views/Shared/_AuthorLayout.cshtml";
+}
+
+<h1>Blog Düzenleme</h1>
+<form asp-action="BlogEdit" asp-controller="Blog" method="post">
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="validationCustom01">Blog Başlık</label>
+            <input type="text" asp-for="Blog.BlogTitle" class="form-control" id="validationDefault01"
+                   placeholder="Başlığı Giriniz" required>
+            <span asp-validation-for="Blog.BlogTitle" class="text-danger"></span>
+        </div>
+    </div>
+    <br>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="validationCustom02">Blog Fotoğrafı</label>
+            <input type="text" asp-for="Blog.BlogImage" class="form-control" id="validationDefault02" required>
+            <span asp-validation-for="Blog.BlogImage" class="text-danger"></span>
+        </div>
+    </div>
+    <br>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="validationCustom02">Blog Thumbnail</label>
+            <input type="text" asp-for="Blog.BlogThumbnailImage" class="form-control" id="validationDefault02" required>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="validationCustom02">Kategori :</label>
+            <select class="form-control col-xs-2" asp-for="Blog.CategoryId" aria-label="Default select example">
+                @foreach (var item in Model.Categories)
+                {
+                    <option value="@item.CategoryId">@item.CategoryName</option>
+                }
+            </select>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="validationCustom02">Blog İçeriği</label>
+            <textarea asp-for="Blog.BlogContent" class="form-control" id="validationDefault02" cols="30" rows="10"
+                      placeholder="Blog İçeriğini Giriniz" required></textarea>
+            <span asp-validation-for="Blog.BlogContent" class="text-danger"></span>
+        </div>
+    </div>
+    <input type="hidden" asp-for="Blog.BlogId" />
+    <input type="hidden" asp-for="Blog.AuthorId" />
+    <input type="hidden" asp-for="Blog.CreateDate" value="@Model.Blog.CreateDate.ToShortDateString()" />
+    <input type="hidden" asp-for="Blog.BlogStatus" />
+    <button asp-action="BlogEdit" asp-controller="Blog" class="btn btn-info">Güncelle</button>
+</form>

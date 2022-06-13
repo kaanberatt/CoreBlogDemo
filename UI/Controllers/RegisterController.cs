@@ -25,7 +25,7 @@ namespace UI.Controllers
             {
                 _author.AuthorStatus = true;
                 _author.AuthorAbout = "Deneme Test";
-                authorManager.AuthorAdd(_author);
+                authorManager.TAdd(_author);
                 return RedirectToAction("Index", "Blog");
             }
             else

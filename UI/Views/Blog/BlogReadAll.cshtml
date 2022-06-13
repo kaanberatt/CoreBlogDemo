@@ -5,10 +5,8 @@
 }
 
 <section class="banner-bottom">
-	<!--/blog-->
 	<div class="container">
 		<div class="row">
-			<!--left-->
 			<div class="col-lg-8 left-blog-info-w3layouts-agileits text-left">
 				@foreach (var item in Model)
 				{
@@ -39,14 +37,10 @@
 						</h3>
 						<p class="text-justify">@item.BlogContent</p>
 					</div>
-
 				}
 				@await Component.InvokeAsync("CommentListByBlog",new {id=ViewBag.Id_value})
 				<partial name="~/Views/Comment/PartialAddComment.cshtml">
-
 			</div>
-			<!--//left-->
-			<!--right-->
 			<aside class="col-lg-4 agileits-w3ls-right-blog-con text-right">
 				<div class="right-blog-info text-left">
 
@@ -100,10 +94,7 @@
 						</div>
 					</div>
 				</div>
-
 			</aside>
-			<!--//right-->
 		</div>
 	</div>
 </section>
-<!--//main-->

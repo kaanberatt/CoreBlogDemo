@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fjjl6vrDnTF2bQ7jgdDscVx6wVn01pJ05q+Hm3do6L3uEiNpbuaCSb16GTiI6NdAGf+Ue7t5sw0s7D7bsZc7sA==",
+  "dgSpecHash": "7Q0gEGhvlsgmOW9elN3/PCTMZaWh2P7zjxKUxPVq1nMW1q84qVnFWGUPlkX5WLWbDUp4TyiYbnhorV15Z4lhdw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\Kamp\\EntityLayer\\EntityLayer.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\Documents\\GitHub\\Kamp\\EntityLayer\\EntityLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

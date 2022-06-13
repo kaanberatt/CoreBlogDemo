@@ -12,9 +12,31 @@ namespace BusinessLayer.Concrete
         {
             aboutDAl=_aboutDAL;
         }
-        public List<About> GetList()
-        {   
+
+        public List<About> TGetList()
+        {
             return aboutDAl.GetListAll();
+        }
+        public void TAdd(About t)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void TDelete(About t)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void TUpdate(About t)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        
+
+        public About TGetById(int id)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

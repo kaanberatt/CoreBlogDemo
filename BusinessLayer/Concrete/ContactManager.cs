@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using BusinessLayer.Abstract;
 using DataAccessLayer.Abstract;
 using EntityLayer.Concrete;
@@ -11,9 +12,29 @@ namespace BusinessLayer.Concrete
         {
             contactDAL=_contactDAL;
         }
-        public void ContactAdd(Contact contact)
+        public void TAdd(Contact t)
         {
-            contactDAL.Insert(contact);            
+            contactDAL.Insert(t);   
+        }
+
+        public void TDelete(Contact t)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Contact TGetById(int id)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public List<Contact> TGetList()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void TUpdate(Contact t)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

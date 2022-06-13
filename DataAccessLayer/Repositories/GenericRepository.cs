@@ -2,13 +2,16 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 using DataAccessLayer.Abstract;
 using DataAccessLayer.Concrete;
+using Microsoft.EntityFrameworkCore;
 
 namespace DataAccessLayer.Repositories
 {
     public class GenericRepository<T> : IGenericDAL<T> where T : class
     {
+
         public void Insert(T t)
         {
             using (var context = new Context())
@@ -57,7 +60,31 @@ namespace DataAccessLayer.Repositories
             {
                 return context.Set<T>().Where(filter).ToList();
             }
-            
+
+        }
+        public List<T> GetListAll(Expression<Func<T, bool>> filter = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, params Expression<Func<T, object>>[] includes)
+        {
+            using (var context = new Context())
+            {
+                IQueryable<T> query = context.Set<T>();
+                if (filter != null)
+                {
+                    query = query.Where(filter);
+                }
+                if (orderBy != null)
+                {
+                    return  orderBy(query).ToList();
+                }
+                if (includes != null)
+                {
+                    foreach (Expression<Func<T, object>> include in includes)
+                    {
+                        query = query.Include(include);
+                    }
+                }
+                return query.ToList();
+            }
+
         }
     }
 }

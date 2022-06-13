@@ -10,6 +10,26 @@ namespace UI.Controllers
         {
             return View();
         }
-        
+        public IActionResult AuthorProfile()
+        {
+            return View();
+        }
+        public IActionResult AuthorMail()
+        {
+            return View();
+        }
+        [AllowAnonymous]
+        public IActionResult Test()
+        {
+            return View();
+        }
+        public PartialViewResult AuthorNavbarPartial()
+        {
+            return PartialView();
+        }
+        public PartialViewResult AuthorFooterPartial()
+        {
+            return PartialView();
+        }        
     }
 }

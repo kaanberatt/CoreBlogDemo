@@ -1,0 +1,27 @@
+@using EntityLayer.Concrete
+@model List<Blog>
+
+<div class="tech-btm">
+    <h3>Son Postlar</h3>
+    <div class="blog-grids row mb-3">
+
+        @foreach (var item in Model.Take(3))
+        {
+            <div class="col-md-5 blog-grid-left">
+                <a asp-controller="Blog" asp-action="BlogReadAll" asp-route-id="@item.BlogId">
+                    <img src="@item.BlogImage" class="card-img-top img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-md-7 blog-grid-right">
+
+                <h5>
+                    <a asp-controller="Blog" asp-action="BlogReadAll" asp-route-id="@item.BlogId">@item.BlogTitle</a>
+                </h5>
+                <div class="sub-meta">
+                    <span><i class="far fa-clock"></i>@item.CreateDate.ToShortDateString()</span>
+                    <br>
+                </div>
+            </div>
+        }
+    </div>
+</div>

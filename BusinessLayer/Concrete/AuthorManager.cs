@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using BusinessLayer.Abstract;
 using DataAccessLayer.Abstract;
 using EntityLayer.Concrete;
@@ -11,9 +12,35 @@ namespace BusinessLayer.Concrete
         {
             authorDAL=_authorDAL;
         }
-        public void AuthorAdd(Author author)
+
+        public List<Author> GetAuthorById(int id)
         {
-            authorDAL.Insert(author);
+            return authorDAL.GetListAll(x=>x.AuthorId==id);
+        }
+
+        public void TAdd(Author t)
+        {
+             authorDAL.Insert(t);
+        }
+
+        public void TDelete(Author t)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Author TGetById(int id)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public List<Author> TGetList()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void TUpdate(Author t)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

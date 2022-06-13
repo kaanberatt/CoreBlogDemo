@@ -10,12 +10,11 @@ namespace UI.Controllers
         AboutManager aboutManager=new AboutManager(new EfAboutRepository());
         public IActionResult Index()
         {
-            var values=aboutManager.GetList();
+            var values=aboutManager.TGetList();
             return View(values);
         }
         public PartialViewResult SocialMediaAbout()
-        {
-            
+        {            
             return PartialView();
         }
     }
